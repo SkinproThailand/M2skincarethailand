@@ -178,7 +178,6 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				}
 			?>
 		</ul>
-		xxx
 		<?php endif; ?>
 
 		<div class="form-row place-order">
