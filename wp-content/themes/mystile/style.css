@@ -2375,6 +2375,8 @@ ul#shipping_method {
   float: left;
   box-shadow: 0 1px 0 0 #ffffff;
   -webkit-box-shadow: 0 1px 0 0 #ffffff;
+  position: relative;
+  top: -7px;
 }
 .checkout #order_review #payment ul li label {
   font-weight: bold;
