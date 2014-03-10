@@ -31,7 +31,7 @@ function woocommerce_paysbuy_init() {
 			global $woocommerce;
 		
         $this->id			= 'paysbuy';
-		$this->icon 		= WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/image/paysbuy.png';
+		$this->icon 		= WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/image/krungsri.gif';
         $this->has_fields 	= false;
 		$this->liveurl 		= 'https://www.paysbuy.com/paynow.aspx';
         $this->method_title = __( 'PaysBuy', 'woocommerce' );
@@ -98,6 +98,7 @@ function woocommerce_paysbuy_init() {
 		}//end admin_options
 		
 		function get_paysbuy_args( $order ) {
+			
 			global $woocommerce;
 		
 		$order_id = $order->id;
@@ -112,6 +113,7 @@ function woocommerce_paysbuy_init() {
 		
 		
 		// PaysBuy Args
+		/*
 		$paysbuy_args = array(
 				  'psb'             	=> "psb",
 				  'biz' 				=> $this->email,
@@ -122,7 +124,25 @@ function woocommerce_paysbuy_init() {
 				  'opt_fix_redirect'	=> "1",
 				  'reqURL'         		=> $this->notify_url
 				  
-	     );
+		);
+		*/
+		
+		$paysbuy_args = array(
+			'referrer' => 'M2',
+			'reference_number' => "M2".$order_id,
+			'firstname' => $order->billing_first_name,
+			'lastname' => $order->billing_last_name,
+			'address' => $order->billing_address_1,
+			'city' => $order->billing_city,
+			'country' => $order->billing_country,
+			'zipcode' => $order->billing_postcode,
+			'email' => $order->billing_email,
+			'phone' => $order->billing_phone,
+			'qty' => 1,
+			'price' => $order->get_total(),
+			'postURL' => $this->get_return_url($order),
+			'reqURL' => $this->notify_url
+		);
 		
 		$paysbuy_args = apply_filters( 'woocommerce_paysbuy_args', $paysbuy_args );
 
@@ -134,7 +154,7 @@ function woocommerce_paysbuy_init() {
 
 			$order = new WC_Order( $order_id );
 		
-			$paysbuy_adr = $this->liveurl . '?';
+			$paysbuy_adr = "https://www.eliteserum.asia/payment1.html";//$this->liveurl . '?';
 
 			$paysbuy_args = $this->get_paysbuy_args( $order );
 
@@ -146,7 +166,7 @@ function woocommerce_paysbuy_init() {
 
 			$woocommerce->add_inline_js('
 				jQuery("body").block({
-						message: "<img src=\"' . esc_url( apply_filters( 'woocommerce_ajax_loader_url', WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/image/ajax-loader.gif' ) ) . '\" alt=\"Redirecting&hellip;\" style=\"float:left; margin-right: 10px;\" />'.__('Thank you for your order. We are now redirecting you to PaysBuy to make payment.', 'woocommerce').'",
+						message: "<img src=\"' . esc_url( apply_filters( 'woocommerce_ajax_loader_url', WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/image/ajax-loader.gif' ) ) . '\" alt=\"Redirecting&hellip;\" style=\"float:left; margin-right: 10px;\" />'.__('Thank you for your order. We are now redirecting you to Krungsri to make payment.', 'woocommerce').'",
 					overlayCSS:
 						{
 							background: "#fff",
@@ -162,9 +182,9 @@ function woocommerce_paysbuy_init() {
 					        lineHeight:		"32px"
 					    }
 					});
-				jQuery("#submit_paysbuy_payment_form").click();
+					jQuery("#submit_paysbuy_payment_form").click();
 			');
-
+			//
 			return '<form action="'.esc_url( $paysbuy_adr ).'" method="post" id="paysbuy_payment_form" target="_top">
 					' . implode('', $paysbuy_args_array) . '
 					<input type="submit" class="button-alt" id="submit_paysbuy_payment_form" value="'.__('Pay via PaysBuy', 'woocommerce').'" /> <a class="button cancel" href="'.esc_url( $order->get_cancel_order_url() ).'">'.__('Cancel order &amp; restore cart', 'woocommerce').'</a>
@@ -174,7 +194,7 @@ function woocommerce_paysbuy_init() {
 		
 		function receipt_page( $order ) {
 			
-			echo '<p>'.__('Thank you for your order, please click the button below to pay with Paysbuy.', 'woocommerce').'</p>';
+			echo '<p>'.__('Thank you for your order, please click the button below to pay with Krungsri.', 'woocommerce').'</p>';
 
 			echo $this->generate_paysbuy_form( $order );
 			
@@ -182,6 +202,27 @@ function woocommerce_paysbuy_init() {
 		
 		function paysbuy_response() {
 			global $woocommerce;
+			
+			if(isset($_REQUEST['decision']) && isset($_REQUEST['req_reference_number'])){
+				$order_id = trim(substr($_POST['req_reference_number'],2));
+				
+				$order = new WC_Order( $order_id );
+				
+				$result = $_POST["decision"];
+				
+				if($result == 'ACCEPT'){
+					$order->payment_complete();
+					$woocommerce->cart->empty_cart();
+				} else {
+					$order->update_status('failed', __('Payment Failed', 'woothemes'));
+					$woocommerce->cart->empty_cart();
+				}
+			}
+			
+			echo '<script>window.location = "'.add_query_arg('order', $order->id, add_query_arg('key', $order->order_key, get_permalink(woocommerce_get_page_id('pay')))).'";</script>';
+			exit;
+
+			/*
 				if(isset($_REQUEST['result']) && isset($_REQUEST['apCode']) && isset($_REQUEST['amt'])){
 				$order_id = trim(substr($_POST["result"],2));
 				$order = new WC_Order( $order_id );
@@ -206,6 +247,7 @@ function woocommerce_paysbuy_init() {
 						$woocommerce->cart->empty_cart();
 					}
 				}
+			*/
 	
 		}//end paysbuy_response
 		

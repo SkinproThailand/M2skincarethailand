@@ -1344,7 +1344,7 @@ class WC_Order {
 		if ( ! empty( WC()->session->order_awaiting_payment ) ) {
 			unset( WC()->session->order_awaiting_payment );
 		}
-
+		
 		if ( $this->id && ( 'on-hold' == $this->status || 'pending' == $this->status || 'failed' == $this->status ) ) {
 
 			$order_needs_processing = true;
