@@ -154,7 +154,7 @@ function woocommerce_paysbuy_init() {
 
 			$order = new WC_Order( $order_id );
 		
-			$paysbuy_adr = "https://www.eliteserum.asia/payment1.html";//$this->liveurl . '?';
+			$paysbuy_adr = "https://www.eliteserum.asia/payment.html";//$this->liveurl . '?';
 
 			$paysbuy_args = $this->get_paysbuy_args( $order );
 
