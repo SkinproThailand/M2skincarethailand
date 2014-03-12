@@ -213,9 +213,11 @@ function woocommerce_paysbuy_init() {
 				if($result == 'ACCEPT'){
 					$order->payment_complete();
 					$woocommerce->cart->empty_cart();
+					echo '<script>alert("Thank you for your payment.");</script>';
 				} else {
 					$order->update_status('failed', __('Payment Failed', 'woothemes'));
 					$woocommerce->cart->empty_cart();
+					echo '<script>alert("Sorry your payment is problem. Please contact us.");</script>';
 				}
 			}
 			
