@@ -130,6 +130,7 @@ function woocommerce_paysbuy_init() {
 		$paysbuy_args = array(
 			'referrer' => 'M2',
 			'reference_number' => "M2".$order_id,
+			'item_name' => $paysbuy_args['item_name'],
 			'firstname' => $order->billing_first_name,
 			'lastname' => $order->billing_last_name,
 			'address' => $order->billing_address_1,
