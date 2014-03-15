@@ -218,7 +218,7 @@ function woocommerce_paysbuy_init() {
 				} else {
 					$order->update_status('failed', __('Payment Failed', 'woothemes'));
 					$woocommerce->cart->empty_cart();
-					echo '<script>alert("Sorry your payment is problem. Please contact us.");</script>';
+					echo '<script>alert("Sorry your payment is problem. Please try again.");</script>';
 				}
 			}
 			

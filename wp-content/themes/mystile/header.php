@@ -154,7 +154,7 @@ $(function(){
 		    </form>
 		</div>
 		
-		<div style="float:left; width:1170px; height:61px;">
+		<!--div style="float:left; width:1170px; height:61px;">
 		    <ul id="sub-nav">
 			<li><a href="#" x="/anti-aging">Anti Aging</a></li>
 			<li><a href="#" x="/sensitive-skin">Sensitive Skin</a></li>
@@ -164,7 +164,7 @@ $(function(){
 			<li><a href="#" x="/body-treatment">Body Treatment</a></li>
 			<li><a href="/our-product">All Products</a></li>
 		    </ul>
-		</div>
+		</div-->
 		
 	</header><!-- /#header -->
 

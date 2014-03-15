@@ -3196,3 +3196,9 @@ img.ui-datepicker-trigger {
 }
 
 .qtrans_language_chooser li { float:left; margin-right:5px; }
+
+.lcp_catlist li { width:280px; float:left; padding:0 15px 15px 0; list-style:none;}
+.lcp_paginator { clear:both; }
+.post-content .woo-image { display:none;}
+.avatar  { display: none !important; }
+table th, table td { border-bottom: 0px; padding: 0px; }

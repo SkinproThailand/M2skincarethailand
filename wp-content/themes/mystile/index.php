@@ -126,10 +126,10 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 	}
 	/*
 	.block-1 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block1.png); }
-	.block-2 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block2.png); }
-	.block-3 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block3.png); }
-	.block-4 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block4.png); }*/
-	.block-5 { background-image: url(http://www.m2skincarethailand.com/wp-content/themes/boot-store/images/block/M2_Block5.png); }
+	.block-2 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block2.png); }*/
+	.block-3 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block3.jpg); }
+	.block-4 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block4.jpg); }
+	.block-5 { background-color: #000000; padding: 0px; overflow: hidden; text-align: center;}
 	.block-6 { overflow: hidden; }
     </style>
     
@@ -139,28 +139,27 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 		<h2>Discovering</h2>
 		<p>What is <br> Mandelic and Malic acid <br> &nbsp;</p>
 		<p>&nbsp;</p>
-		<p><a href="#" x="our-product">Learn more</a></p>
+		<p><a href="discovering">Learn more</a></p>
 	</div>
 	<div class="col block-2">
 		<h2>Testimonials</h2>
 		<p>Listen to <br> what people say <br> about us</p>
 		<p>&nbsp;</p>
-		<p><a href="#" x="testimonials">Read more detail</a></p>
+		<p><a href="testimonials">Read more detail</a></p>
 	</div>
 	<div class="col col-right block-3" style="text-align:right">
-		<p>We would like to thank you</p>
+		<!--p>We would like to thank you</p>
 		<h2>News & Promotions</h2>
 		<p>&nbsp;</p>
-		<p style="margin-top:59px"><a href="#" x="new-and-promotions">Check promotion of the month</a></p>
+		<p style="margin-top:59px"><a href="#" x="new-and-promotions">Check promotion of the month</a></p-->
 	</div>
 	<div class="col block-4">
-		<h2>What <br>the media <br>says</h2>
+		<!--h2>What <br>the media <br>says</h2>
 		<p>&nbsp;</p>
-		<p><a href="#" x="what-the-media-says">Read more</a></p>
+		<p><a href="#" x="what-the-media-says">Read more</a></p-->
 	</div>
 	<div class="col block-5">
-		<!--div class="image">&nbsp;</div>
-		<div class="text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, adipisci velit</div-->
+		<iframe width="356" height="200" src="//www.youtube.com/embed/nYCL-SncEeA?rel=0" frameborder="0" allowfullscreen></iframe>
 	</div>
 	<div class="col col-right block-6">
 		<div class="fb-like-box" data-href="http://www.facebook.com/M2SkinCareThailand" data-width="374" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="true"></div>
