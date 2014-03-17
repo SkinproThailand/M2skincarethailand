@@ -126,10 +126,10 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 	}
 	.block-1 { cursor:default; /*background-image: url(/wp-content/themes/boot-store/images/block/M2_Block1.png);*/ }
 	.block-2 { cursor:default;  /*background-image: url(/wp-content/themes/boot-store/images/block/M2_Block2.png);*/ }
-	.block-3 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block3.jpg); }
-	.block-3:hover { opacity: 0.8; }
-	.block-4 { cursor:default; background-image: url(/wp-content/themes/boot-store/images/block/M2_Block4.jpg); }
-	.block-5 { background-color: #000000; padding: 0px; overflow: hidden; text-align: center;}
+	.block-4 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block3.jpg); }
+	.block-4:hover { opacity: 0.8; }
+	.block-5 { cursor:default; background-image: url(/wp-content/themes/boot-store/images/block/M2_Block4.jpg); }
+	.block-6 { background-color: #000000; padding: 0px; overflow: hidden; text-align: center;}
 	.block-6 { overflow: hidden; }
     </style>
     
@@ -142,27 +142,30 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 		<p><a href="discovering/">Learn more</a></p>
 	</div>
 	<div class="col block-2">
+		<h2>Article</h2>
+		<p>Listen to <br> what people say <br> about us</p>
+		<p>&nbsp;</p>
+		<p><a href="article/">Read more detail</a></p>
+	</div>
+	<div class="col col-right block-3">
 		<h2>Testimonials</h2>
 		<p>Listen to <br> what people say <br> about us</p>
 		<p>&nbsp;</p>
 		<p><a href="testimonials/">Read more detail</a></p>
 	</div>
-	<div class="col col-right block-3" style="text-align:right" onclick="window.location='news-promotion/';">
+	<div class="col block-4" style="text-align:right" onclick="window.location='news-promotion/';">
 		<!--p>We would like to thank you</p>
 		<h2>News & Promotions</h2>
 		<p>&nbsp;</p>
 		<p style="margin-top:59px"><a href="#" x="new-and-promotions">Check promotion of the month</a></p-->
 	</div>
-	<div class="col block-4">
+	<div class="col block-5">
 		<!--h2>What <br>the media <br>says</h2>
 		<p>&nbsp;</p>
 		<p><a href="#" x="what-the-media-says">Read more</a></p-->
 	</div>
-	<div class="col block-5">
-		<iframe width="356" height="200" src="//www.youtube.com/embed/nYCL-SncEeA?rel=0" frameborder="0" allowfullscreen></iframe>
-	</div>
 	<div class="col col-right block-6">
-		<div class="fb-like-box" data-href="http://www.facebook.com/M2SkinCareThailand" data-width="374" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="true"></div>
+		<iframe width="356" height="200" src="//www.youtube.com/embed/nYCL-SncEeA?rel=0" frameborder="0" allowfullscreen></iframe>
 	</div>
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
