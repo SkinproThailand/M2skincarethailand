@@ -115,7 +115,7 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
     
     <style>
 	@charset "UTF-8";
-	@import url(fonts/supermarket/stylesheet.css);
+	@import url(/fonts/supermarket/stylesheet.css);
 	.col { font-family:supermarketregular !important; padding: 20px; cursor:pointer; float: left; width: 374px; height:200px; border: 1px solid #b07809; margin: 0 21px 21px 0; }
 	.col h2 { font-size:42px; line-height: 33px;  }
 	.col p { font-size:20px; }
@@ -124,11 +124,11 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 	padding-left: 0px;
 	padding-right: 0px;
 	}
-	/*
-	.block-1 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block1.png); }
-	.block-2 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block2.png); }*/
+	.block-1 { cursor:default; /*background-image: url(/wp-content/themes/boot-store/images/block/M2_Block1.png);*/ }
+	.block-2 { cursor:default;  /*background-image: url(/wp-content/themes/boot-store/images/block/M2_Block2.png);*/ }
 	.block-3 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block3.jpg); }
-	.block-4 { background-image: url(/wp-content/themes/boot-store/images/block/M2_Block4.jpg); }
+	.block-3:hover { opacity: 0.8; }
+	.block-4 { cursor:default; background-image: url(/wp-content/themes/boot-store/images/block/M2_Block4.jpg); }
 	.block-5 { background-color: #000000; padding: 0px; overflow: hidden; text-align: center;}
 	.block-6 { overflow: hidden; }
     </style>
@@ -139,15 +139,15 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 		<h2>Discovering</h2>
 		<p>What is <br> Mandelic and Malic acid <br> &nbsp;</p>
 		<p>&nbsp;</p>
-		<p><a href="discovering">Learn more</a></p>
+		<p><a href="discovering/">Learn more</a></p>
 	</div>
 	<div class="col block-2">
 		<h2>Testimonials</h2>
 		<p>Listen to <br> what people say <br> about us</p>
 		<p>&nbsp;</p>
-		<p><a href="testimonials">Read more detail</a></p>
+		<p><a href="testimonials/">Read more detail</a></p>
 	</div>
-	<div class="col col-right block-3" style="text-align:right">
+	<div class="col col-right block-3" style="text-align:right" onclick="window.location='news-promotion/';">
 		<!--p>We would like to thank you</p>
 		<h2>News & Promotions</h2>
 		<p>&nbsp;</p>

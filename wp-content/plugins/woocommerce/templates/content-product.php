@@ -38,9 +38,22 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 <li <?php post_class( $classes ); ?>>
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
-
+	
 	<a href="<?php the_permalink(); ?>">
-
+	
+		<div style="float:left; position: absolute; text-align: right; width: 100%;top: 228px;right: 8px;" class="fb-like" data-href="<?=get_permalink($post->id)?>" data-send="false" data-layout="button_count" data-width="880" data-show-faces="true"></div>
+		
+		<?
+		/** lek */
+		$soldout = get_post_meta(get_the_ID(), 'soldout', true);
+		if ($soldout == 'yes')
+		{
+			?>
+			<img src="/wp-content/uploads/soldout.png" style="float:left; position: absolute;border: 0;top: 4px;width: 200px;left: -7px;background-color: transparent;">
+			<?
+		}
+		?>
+		
 		<?php
 			/**
 			 * woocommerce_before_shop_loop_item_title hook
@@ -50,7 +63,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			 */
 			do_action( 'woocommerce_before_shop_loop_item_title' );
 		?>
-
+		
 		<h3><?php the_title(); ?></h3>
 
 		<?php

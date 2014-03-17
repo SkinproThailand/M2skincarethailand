@@ -64,8 +64,8 @@ global $woo_options, $woocommerce;
 #sub-nav li:hover { opacity: 0.6; }
 #sub-nav li a { color:#666666; font-weight:normal; }
 #sub-nav li a:hover { text-decoration: none; }
-.product h3 { font-size:1.387em; }
-.footer-wrap { display:none; }
+.product h3 { font-size:1.1em; line-height:20px; }
+/* .footer-wrap { display:none; } */
 #top { display: none; }
 .qty { height:28px !important; }
 </style>
