@@ -37,6 +37,7 @@ global $woo_options, $woocommerce;
 
 <title><?php woo_title(''); ?></title>
 <?php woo_meta(); ?>
+<link rel="icon" type="image/x-icon" href="/wp-content/uploads/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" media="screen" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
