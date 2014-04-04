@@ -3195,6 +3195,7 @@ img.ui-datepicker-trigger {
   display: none !important;
 }
 
+.qtrans_language_chooser { margin: 0px; }
 .qtrans_language_chooser li { float:left; margin-right:5px; }
 
 .lcp_catlist li { width:280px; float:left; padding:0 15px 15px 0; list-style:none;}

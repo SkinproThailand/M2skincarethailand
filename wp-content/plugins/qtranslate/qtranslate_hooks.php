@@ -24,7 +24,7 @@ function qtrans_header(){
 	echo "\n<meta http-equiv=\"Content-Language\" content=\"".str_replace('_','-',$q_config['locale'][$q_config['language']])."\" />\n";
 	$css = "<style type=\"text/css\" media=\"screen\">\n";
 	$css .=".qtrans_flag span { display:none }\n";
-	$css .=".qtrans_flag { height:12px; width:18px; display:block }\n";
+	$css .=".qtrans_flag { height:19px; width:28px; display:block }\n";
 	$css .=".qtrans_flag_and_text { padding-left:20px }\n";
 	$baseurl = WP_CONTENT_URL;
 	if(isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == '1' || $_SERVER['HTTPS'] == 'on')) {
