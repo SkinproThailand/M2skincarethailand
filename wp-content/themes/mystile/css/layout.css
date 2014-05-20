@@ -401,6 +401,7 @@ INDEX
     display: block;
     width: 11%;
     float: left;
+    display: none;
   }
   .type-post .meta .day,
   .type-post .meta .month,
@@ -455,14 +456,14 @@ INDEX
     height: auto;
   }
   .type-post .post-content {
-    width: 82.7%;
+    width: 100%;
     float: right;
   }
   .single .type-post p:first-child {
     font-size: 1.387em;
   }
   #post-entries {
-    width: 82.7%;
+    width: 100%;
     float: right;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
@@ -480,16 +481,16 @@ INDEX
   }
   #comments .commentlist li.comment ul.children {
     float: right;
-    width: 82.7%;
+    width: 100%;
     clear: right;
     padding-top: 2.618em;
   }
   .single-post #comments h2:first-child {
-    width: 82.7%;
+    width: 100%;
     float: right;
   }
   #respond {
-    width: 82.7%;
+    width: 100%;
     float: right;
   }
   #fancybox-outer #respond {
@@ -640,6 +641,7 @@ INDEX
   }
   .layout-full .entry img {
     max-width: 100%;
+    margin: 0 auto;
   }
   .layout-right-content #main {
     float: right;

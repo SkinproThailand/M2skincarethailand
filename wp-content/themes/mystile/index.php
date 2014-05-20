@@ -257,6 +257,10 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 	.pin .description {
 		padding: 0 0 0 1px;
 	}
+	.lcp_catlist a { display: block; color:#996633; font-size: 1.3em; line-height: 60px; text-decoration: none; }
+	.lcp_catlist a img:hover { opacity: 0.6; }
+	.lcp_catlist a img { border: 1px solid #e6e6e6; padding: 15px; width: 290px; margin: 0 auto; height:211px; -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.4); -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.4); box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.4); }
+	.home #content.with-banner { padding-top:0px; }
     </style>
     <script>
     $(function() {
@@ -273,19 +277,21 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 	
 	<section class="entry">
             <ul class="lcp_catlist" id="lcp_instance_1">
-		<li><a href="http://www.m2skincarethailand.com/products/" title="ผลิตภัณฑ์">ผลิตภัณฑ์</a> <a href="http://www.m2skincarethailand.com/products/" title="ผลิตภัณฑ์"><img width="260" height="211" src="http://www.m2skincarethailand.com/wp-content/uploads/2014/03/M2-Skin-Care-Mandelic-Acid-and-Malic-Acid-260x260.png" style="width:260px; height:211px;" class="attachment-thumbnail wp-post-image" alt="1017464_217840841746660_1265793161_n"></a></li>
-		<li><a href="http://www.m2skincarethailand.com/ingredient/" title="ส่วนผสม">ส่วนผสม</a> <a href="http://www.m2skincarethailand.com/ingredient/" title="ส่วนผสม"><img width="260" height="211" src="http://www.m2skincarethailand.com/wp-content/uploads/2014/03/1012418_209825799214831_102530169_n-e1396584827149.jpg" class="attachment-thumbnail wp-post-image" alt="529569_211699572360787_1752821559_n"></a></li>
-		<li><a href="http://www.m2skincarethailand.com/before-and-after/" title="ก่อนใช้ &amp; หลังใช้">ก่อนใช้ &amp; หลังใช้</a> <a href="http://www.m2skincarethailand.com/before-and-after/" title="ก่อนใช้ &amp; หลังใช้"><img width="260" height="211" src="http://www.m2skincarethailand.com/wp-content/uploads/2014/03/%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%A7-M2-%E0%B8%A5%E0%B8%94%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%A7-A-EN-260x260.jpg" style="width:260px; height:211px;"  class="attachment-thumbnail wp-post-image" alt="1012418_209825799214831_102530169_n"></a></li>
-		<li><a href="http://www.m2skincarethailand.com/reviews/" title="รีวิว">รีวิว</a> <a href="http://www.m2skincarethailand.com/reviews/" title="รีวิว"><img width="260" height="211" src="http://www.m2skincarethailand.com/wp-content/uploads/2014/03/1620827_219402908257120_517471735_n-260x260.jpg" class="attachment-thumbnail wp-post-image" alt="1506634_210214732509271_1363141758_n"></a></li>
+		<li><a href="/our-product/" title="ผลิตภัณฑ์">ผลิตภัณฑ์</a> <a href="/our-product/" title="ผลิตภัณฑ์"><img width="260" height="211" src="/wp-content/uploads/2014/03/M2-Skin-Care-Mandelic-Acid-and-Malic-Acid-260x260.png" style="width:260px; height:211px;" class="attachment-thumbnail wp-post-image" alt="1017464_217840841746660_1265793161_n"></a></li>
+		<li><a href="/ingredients/" title="ส่วนผสม">ส่วนผสม</a> <a href="/ingredients/" title="ส่วนผสม"><img width="260" height="211" src="/wp-content/uploads/2014/03/1012418_209825799214831_102530169_n-e1396584827149.jpg" class="attachment-thumbnail wp-post-image" alt="529569_211699572360787_1752821559_n"></a></li>
+		<li><a href="/before-and-after/" title="ก่อนใช้ &amp; หลังใช้">ก่อนใช้ &amp; หลังใช้</a> <a href="/before-and-after/" title="ก่อนใช้ &amp; หลังใช้"><img width="260" height="211" src="/wp-content/uploads/2014/03/%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%A7-M2-%E0%B8%A5%E0%B8%94%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%A7-A-EN-260x260.jpg" style="width:260px; height:211px;"  class="attachment-thumbnail wp-post-image" alt="1012418_209825799214831_102530169_n"></a></li>
+		<li><a href="/testimonials/" title="รีวิว">รีวิว</a> <a href="/testimonials/" title="รีวิว"><img width="260" height="211" src="/wp-content/uploads/2014/03/1620827_219402908257120_517471735_n-260x260.jpg" class="attachment-thumbnail wp-post-image" alt="1506634_210214732509271_1363141758_n"></a></li>
 		<li>
-		    <a href="http://www.m2skincarethailand.com/about-us/" title="ทีมวิจัย">ทีมวิจัย</a>
-		    <a href="http://www.m2skincarethailand.com/about-us/" title="ทีมวิจัย">
-		    <img width="260" height="211" src="http://www.m2skincarethailand.com/wp-content/uploads/2014/03/1506634_210214732509271_1363141758_n-e1396584846873.jpg" class="attachment-thumbnail wp-post-image" alt="1620957_217841145079963_591592502_n">
+		    <a href="/research-team/" title="ทีมวิจัย">ทีมวิจัย</a>
+		    <a href="/research-team/" title="ทีมวิจัย">
+		    <img width="260" height="211" src="/wp-content/uploads/2014/03/1506634_210214732509271_1363141758_n-e1396584846873.jpg" class="attachment-thumbnail wp-post-image" alt="1620957_217841145079963_591592502_n">
 		    </a>
 		</li>
-		<li><a href="http://www.m2skincarethailand.com/buy-now/" title="สั่งซื้อ">วิธีการสั่งซื้อ</a> <a href="http://www.m2skincarethailand.com/buy-now/" title="สั่งซื้อ"><img width="260" height="211" src="http://www.m2skincarethailand.com/wp-content/uploads/2014/03/1623648_219910911539653_735101116_n-e1396584903322.jpg" class="attachment-thumbnail wp-post-image" alt="1623648_219910911539653_735101116_n"></a></li>
+		<li><a href="/buy-now/" title="สั่งซื้อ">วิธีการสั่งซื้อ</a> <a href="/how-to-buy/" title="สั่งซื้อ"><img width="260" height="211" src="/wp-content/uploads/2014/03/1623648_219910911539653_735101116_n-e1396584903322.jpg" class="attachment-thumbnail wp-post-image" alt="1623648_219910911539653_735101116_n"></a></li>
 	    </ul>
-	</section>	
+	</section>
+	
+	<div style="height:30px">&nbsp;</div>
 	
     	<?php woo_main_before(); ?>
     

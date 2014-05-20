@@ -44,13 +44,13 @@ global $woo_options, $woocommerce;
 	wp_head();
 	woo_head();
 ?>
-<script type='text/javascript' src='http://www.m2skincarethailand.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
-<script type='text/javascript' src='http://www.m2skincarethailand.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <script type='text/javascript' src='http://jquery.bassistance.de/validate/jquery.validate.js'></script>
-<link rel='stylesheet' id='bootstrap-css'  href='http://www.m2skincarethailand.com/wp-content/themes/boot-store/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='/wp-content/themes/boot-store/css/bootstrap.min.css' type='text/css' media='all' />
 
 <style>
 * {
