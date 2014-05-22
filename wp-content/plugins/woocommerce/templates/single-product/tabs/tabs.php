@@ -15,7 +15,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Each tab is an array containing title, callback and priority.
  * @see woocommerce_default_product_tabs()
  */
-$tabs = apply_filters( 'woocommerce_product_tabs', array() );
+//$tabs = apply_filters( 'woocommerce_product_tabs', array() );
+
+$tabs = array();
+$tabs['description'] = array('title'=>'รายละเอียด', 'priority'=>10, 'callback'=>'woocommerce_product_description_tab');
+$tabs['howtouse'] = array('title'=>'วิธีใช้', 'priority'=>10, 'callback'=>'woocommerce_product_howtouse_tab');
+$tabs['ingredient'] = array('title'=>'ส่วนผสม', 'priority'=>10, 'callback'=>'woocommerce_product_ingredient_tab');
 
 if ( ! empty( $tabs ) ) : ?>
 
@@ -32,7 +37,18 @@ if ( ! empty( $tabs ) ) : ?>
 		<?php foreach ( $tabs as $key => $tab ) : ?>
 
 			<div class="panel entry-content" id="tab-<?php echo $key ?>">
-				<?php call_user_func( $tab['callback'], $key, $tab ) ?>
+				
+				<?
+				/** lek */
+				if ($key == 'howtouse') {
+					echo get_post_meta(get_the_ID(), 'howtouse', true);
+				} else if ($key == 'ingredient') {
+					echo get_post_meta(get_the_ID(), 'ingredient', true);
+				} else {
+					call_user_func( $tab['callback'], $key, $tab );
+				}
+				?>
+		
 			</div>
 
 		<?php endforeach; ?>
