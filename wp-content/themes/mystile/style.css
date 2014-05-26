@@ -293,7 +293,7 @@ mark {
 /*-------------------------------------------------------------------------------------------*/
 /* 1.1 Defaults */
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; 
 }
 body {
   font-size: 1.4em;
@@ -305,10 +305,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   padding: 0 1.618em;
-  /*background: #fcfcfc;*/
-  background-image: url(/wp-content/uploads/green_apple.jpg);
+  background: #fcfcfc;
+  /*background-image: url(/wp-content/uploads/green_apple.jpg);
   background-position: -1px 66px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 img {
   vertical-align: bottom;
