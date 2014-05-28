@@ -1993,7 +1993,7 @@ ul.products li.product img {
   box-sizing: border-box;
   /* Opera/IE 8+ */
 
-  border: 1px solid #e8e4e3;
+  border: 0px solid #e8e4e3;
   background: #fff;
   margin: 0 auto 1em;
 }

@@ -62,7 +62,101 @@ if (!function_exists('woocommerce_mystile_before_content')) {
 	        <!-- #main Starts -->
 	        <?php woo_main_before(); ?>
 	        <div id="main" class="col-left">
-
+		
+		    <script type="text/javascript">
+		    jQuery( function() {
+			    jQuery( '#template-carousel' ).carousel( {
+				    interval: 8000
+			    } );
+		    } );
+		    </script>
+		    <style>
+			.carousel { margin: 0 auto; max-width: 1170px; width:100%; }
+			#template-carousel .carousel-inner { max-height: 337px; width:100%;  }
+			.home #content.with-banner { margin-top: 50px; }
+			.post img, .type-page img { padding:0px; border:0px; }
+			.post, .type-page { margin: 0px; }
+		    </style>
+		    <div id="template-carousel" class="carousel slide hidden-phone">
+			<div class="carousel-inner">
+				
+				<div id="bs-slide-47" class="item  bs-slide-47 active">
+					<div class="bigcarousel-bg hidden-phone">
+					</div>
+					<div id="post-47" class="post-2 page type-page status-publish hentry">
+					    <div class="site row-fluid wrapper-group">
+						<img src="/wp-content/uploads/Slide_1.jpg"/>
+					    </div>
+					    <!-- .wrapper-group -->
+					</div>
+					<!-- #post-## -->
+				    </div>
+				<div id="bs-slide-47" class="item  bs-slide-47">
+					<div class="bigcarousel-bg hidden-phone">
+					</div>
+					<div id="post-47" class="post-2 page type-page status-publish hentry">
+					    <div class="site row-fluid wrapper-group">
+						<img src="/wp-content/uploads/Slide_2.jpg"/>
+					    </div>
+					    <!-- .wrapper-group -->
+					</div>
+					<!-- #post-## -->
+				    </div>
+				    <!-- .item -->
+				    <div id="bs-slide-47" class="item  bs-slide-47">
+					<div class="bigcarousel-bg hidden-phone">
+					</div>
+					<div id="post-47" class="post-2 page type-page status-publish hentry">
+					    <div class="site row-fluid wrapper-group">
+						<img src="/wp-content/uploads/Slide_3.jpg"/>
+					    </div>
+					    <!-- .wrapper-group -->
+					</div>
+					<!-- #post-## -->
+				    </div>
+				    <!-- .item -->
+				    <div id="bs-slide-47" class="item  bs-slide-47">
+					<div class="bigcarousel-bg hidden-phone">
+					</div>
+					<div id="post-47" class="post-2 page type-page status-publish hentry">
+					    <div class="site row-fluid wrapper-group">
+						<img src="/wp-content/uploads/Slide_4.jpg"/>
+					    </div>
+					    <!-- .wrapper-group -->
+					</div>
+					<!-- #post-## -->
+				    </div>
+				    <!-- .item -->
+				    <div id="bs-slide-47" class="item  bs-slide-47">
+					<div class="bigcarousel-bg hidden-phone">
+					</div>
+					<div id="post-47" class="post-2 page type-page status-publish hentry">
+					    <div class="site row-fluid wrapper-group">
+						<img src="/wp-content/uploads/Slide_5.jpg"/>
+					    </div>
+					    <!-- .wrapper-group -->
+					</div>
+					<!-- #post-## -->
+				    </div>
+				    <!-- .item -->
+				    <div id="bs-slide-47" class="item  bs-slide-47">
+					<div class="bigcarousel-bg hidden-phone">
+					</div>
+					<div id="post-47" class="post-2 page type-page status-publish hentry">
+					    <div class="site row-fluid wrapper-group">
+						<img src="/wp-content/uploads/Slide_6.jpg"/>
+					    </div>
+					    <!-- .wrapper-group -->
+					</div>
+					<!-- #post-## -->
+				    </div>
+				    <!-- .item -->
+	    
+			</div><!-- .carousel-inner -->
+		
+		    </div><!-- #template-carousel -->
+		    <br>
+		    
 	    <?php
 	}
 }

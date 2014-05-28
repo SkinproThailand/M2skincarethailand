@@ -96,6 +96,18 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 			    <!-- #post-## -->
 			</div>
 			<!-- .item -->
+			<div id="bs-slide-47" class="item  bs-slide-47">
+			    <div class="bigcarousel-bg hidden-phone">
+			    </div>
+			    <div id="post-47" class="post-2 page type-page status-publish hentry">
+				<div class="site row-fluid wrapper-group">
+				    <img src="/wp-content/uploads/Slide_6.jpg"/>
+				</div>
+				<!-- .wrapper-group -->
+			    </div>
+			    <!-- #post-## -->
+			</div>
+			<!-- .item -->
 
 	    </div><!-- .carousel-inner -->
     

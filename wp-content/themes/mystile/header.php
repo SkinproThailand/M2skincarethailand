@@ -148,12 +148,12 @@ $(function(){
 
 		<?php woo_nav_after(); ?>
 		
-		<div style="float: right; position: relative; width: 700px; text-align: right;">
+		<!--div style="float: right; position: relative; width: 700px; text-align: right;">
 		    <form id="email_subscribe_form" action="" method="post">
 			<input type="email" name="email_subscribe" value="" placeholder="Your email address." style="height: 30px; margin: 0px 10px;" required/>
 			<input type="submit" value="subscribe"/>
 		    </form>
-		</div>
+		</div-->
 		
 		<!--div style="float:left; width:1170px; height:61px;">
 		    <ul id="sub-nav">

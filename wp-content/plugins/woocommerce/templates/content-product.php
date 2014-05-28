@@ -41,7 +41,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	
 	<a href="<?php the_permalink(); ?>">
 	
-		<div style="float:left; position: absolute; text-align: right; width: 100%;top: 228px;right: 8px;" class="fb-like" data-href="<?=get_permalink($post->id)?>" data-send="false" data-layout="button_count" data-width="880" data-show-faces="true"></div>
+		<div style="float:left; position: absolute; text-align: right; width: 100%;top: 172px;right: 0px;" class="fb-like" data-href="<?=get_permalink($post->id)?>" data-send="false" data-layout="button_count" data-width="880" data-show-faces="true"></div>
 		
 		<?
 		/** lek */
