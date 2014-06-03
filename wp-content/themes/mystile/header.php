@@ -129,7 +129,7 @@ $(function(){
 		</hgroup>
 
         <?php woo_nav_before(); ?>
-
+		
 		<nav id="navigation" class="col-full" role="navigation">
 
 			<?php
@@ -137,15 +137,15 @@ $(function(){
 				wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'main-nav', 'menu_class' => 'nav fr', 'theme_location' => 'primary-menu' ) );
 			} else {
 			?>
-	        <ul id="main-nav" class="nav fl">
+			<ul id="main-nav" class="nav fl">
 				<?php if ( is_page() ) $highlight = 'page_item'; else $highlight = 'page_item current_page_item'; ?>
 				<li class="<?php echo $highlight; ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php _e( 'Home', 'woothemes' ); ?></a></li>
 				<?php wp_list_pages( 'sort_column=menu_order&depth=6&title_li=&exclude=' ); ?>
 			</ul><!-- /#nav -->
-	        <?php } ?>
-
+			<?php } ?>
+			
 		</nav><!-- /#navigation -->
-
+		
 		<?php woo_nav_after(); ?>
 		
 		<!--div style="float: right; position: relative; width: 700px; text-align: right;">
@@ -167,6 +167,52 @@ $(function(){
 		    </ul>
 		</div-->
 		
+		<style>
+		.nav ul li a.cart.active {
+		color: #666666;
+		border-color: #757575;
+		}
+		.nav ul li a.cart, .nav ul li a.navicon, input[type="submit"].guest_button {
+		background: url(//cdn.shopify.com/s/files/1/0190/6380/t/31/assets/cart_dark.png?3930) no-repeat 9px 7px;
+		padding: 5px 10px 5px 30px;
+		border: solid 1px #d7d4d3;
+		-webkit-border-radius: 4px;
+		-khtml-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+		border-radius: 4px;
+		}
+		.nav ul li a.active, nav ul li a.active:visited, nav ul li a.active:active {
+		color: #666666;
+		}
+		.nav ul li a, .nav ul li a:visited, .nav ul li a:active {
+		font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #666666;
+		position: relative;
+		display: block;
+		letter-spacing: 0px;
+		}
+		.nav ul li a, .nav ul li a:visited, .nav ul li a:active {
+		font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #666666;
+		position: relative;
+		display: block;
+		letter-spacing: 0px;
+		}
+		</style>
+		<div class="nav" style="float: right; position: relative; width:300px; ">
+		    <ul style="float:right">
+			<li><a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" class="cart active" title="Shopping Cart">ตะกร้า<span class="cart_count"> (<?=$woocommerce->cart->cart_contents_count?>)</span></a></li>
+		    </ul>
+		</div>
+
 	</header><!-- /#header -->
 
 	<?php woo_content_before(); ?>
