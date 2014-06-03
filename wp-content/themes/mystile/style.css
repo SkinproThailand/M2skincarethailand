@@ -454,7 +454,7 @@ table td {
 }
 table th {
   text-transform: uppercase;
-  border-bottom: 4px double #e8e4e3;
+  border-bottom: 1px double #e8e4e3;
 }
 table tr th:first-child,
 table tr td:first-child {

@@ -524,7 +524,7 @@ INDEX
   .form-row {
     width: 48%;
     float: left;
-    margin-bottom: 2.053em;
+    /*margin-bottom: 2.053em;*/
   }
   .form-row label {
     display: block;
