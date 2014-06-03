@@ -31,7 +31,7 @@ function woocommerce_paysbuy_init() {
 			global $woocommerce;
 		
         $this->id			= 'paysbuy';
-		$this->icon 		= WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/image/krungsri.gif';
+		$this->icon 		= '';//WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/image/krungsri.gif';
         $this->has_fields 	= false;
 		$this->liveurl 		= 'https://www.paysbuy.com/paynow.aspx';
         $this->method_title = __( 'PaysBuy', 'woocommerce' );
